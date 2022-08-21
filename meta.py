@@ -1,4 +1,4 @@
-from igm.dist import igm_setup
+from igm.conf import igm_setup
 
 igm_setup(
     title='simple',
