@@ -1,4 +1,4 @@
-from igm.conf import igm_project
+from igm.conf import igm_project, cpy
 
 igm_project(
     name={{ (user.name | str + '-simple-demo') | potc }},
@@ -6,4 +6,7 @@ igm_project(
     template_name={{ template.name | potc }},
     template_version={{ template.version | potc }},
     created_at={{ py.time.time() | potc }},
+    scripts={
+        None: cpy('main.py')
+    }
 )
