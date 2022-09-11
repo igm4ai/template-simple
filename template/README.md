@@ -4,6 +4,6 @@ This is a hello world project of igm created by {{ user.name | potc }} (age: `{{
 
 You can start this project by the following command:
 
-```python
-python main.py
+```shell
+igm run
 ```
